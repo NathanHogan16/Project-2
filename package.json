@@ -1,0 +1,41 @@
+{
+  "name": "slim-pickins",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
+  "description": "server for using Slim Pickins",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linegrind675/Slim-Pickins.git"
+  },
+  "author": "mckerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linegrind675/Slim-Pickins/issues"
+  },
+  "homepage": "https://github.com/linegrind675/Slim-Pickins#readme",
+  
+  
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.6.2",
+    "unirest": "^0.6.0"
+  }
+
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.title {
+    color: black;
+}
+
+html,body{
+    height: 100%;
+}
+
+.Login{
+    color: black;
+}
+
+
+#bottom{
+    min-height:100%
+}
+
+#main{
+    overflow: auto;
+    padding-bottom: 75px; 
+    height: 1300px;
+}
+
+.btn-group{
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 25px;
+}
+.link{
+    color: white;
+}
+#footer{
+    background-color:#6f4e37;
+    text-align: center;
+    height: 195px;
+    margin-top: -100px;
+    clear: both;
+}
+
+#footer-text{
+    color:black;
+}
+
+
+ header {
+    display: flex;
+    align-items: center;
+    background-color:#6f4e37;
+    justify-content: space-between;
+    padding: 0 1%;
+} 
+
+.btn-no-style {
+    font-size: 50px;
+    font-weight: bold;
+    
+} 
+
+.recipeofthemonth{
+    background-image: url("../views/images/best-chocolate-chip-cookie-recipe-ever-no-chilling-683x1024.jpeg");
+    background-position: center;
+    padding: 100px 50px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+} 
+
+
+.cookie{
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+}
+
+.ROTM{
+    color: black;
+    text-align: center;
+}
+
+#icon{
+    text-indent: 50px;
+}
+
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+  
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+  
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+.imgcontainer {
+    text-align: center;
+}
