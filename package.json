@@ -21,8 +21,6 @@
     "url": "https://github.com/linegrind675/Slim-Pickins/issues"
   },
   "homepage": "https://github.com/linegrind675/Slim-Pickins#readme",
-  
-  
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
@@ -37,5 +35,4 @@
     "sequelize": "^6.6.2",
     "unirest": "^0.6.0"
   }
-
 }
