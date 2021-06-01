@@ -56,17 +56,17 @@ app.engine('handlebars', exphbs({
 app.use(express.static('public'))
 // var template = Handlebars.compile("./views/layouts/homepage.handlebars")
 // console.log(template)
-app.get('/recipe', (req, res) => {
-    const payload = {body: req.params.recipe}
-     res.render('recipes')
-    // console.log("hello")
-    // res.send(payload)
-});
+// app.get('/recipe', (req, res) => {
+//     const payload = {body: req.params.recipe}
+//      res.render('recipes')
+//     // console.log("hello")
+//     // res.send(payload)
+// });
 
-app.get('/', (req, res) => {
-    //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
-    res.render('homepage', {layout : 'main'});
-});
+// app.get('/', (req, res) => {
+//     //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
+//     res.render('homepage', {layout : 'main'});
+// });
 
 // app.use((req, res) => {
 //     res.status(404).end();
