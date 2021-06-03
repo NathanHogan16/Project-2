@@ -90,13 +90,14 @@ html,body{
 
 
 /* Bordered form */
-/* form {
+ /* form {
     border: 3px solid #f1f1f1;
+    text-align: center;
 } */
   
 /* Full-width inputs */
 /* input[type=text], input[type=password] {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -105,26 +106,47 @@ html,body{
 } */
   
 /* Set a style for all buttons */
-/* button {
-    background-color: #04AA6D;
+ /* button {
+    background-color: #6f4e37;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
-}
-   */
+    width: 50%;
+} */
+  
 /* Add a hover effect for buttons */
-button:hover {
+/* button:hover {
     opacity: 0.8;
+} */
+
+
+button:hover {
+    background-color: #6f4e37;
 }
   
-/* Add padding to containers */
-/* .container {
-    padding: 16px;
+textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
-
-.imgcontainer {
+  
+textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+}
+  
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+  
+form > div {
+    margin-bottom: 2%;
     text-align: center;
-} */
+}
+  
+form label {
+    display: block;
+}
