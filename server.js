@@ -26,6 +26,7 @@ const sess = {
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 
+app.use(express.json());
 // Parsing
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -46,7 +47,7 @@ app.engine('handlebars', exphbs({
 
 app.use(express.static('public'))
 
-
+app.use(require('./controllers/'));
 
 // turn on routes
  app.use(routes);

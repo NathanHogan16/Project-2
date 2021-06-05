@@ -150,3 +150,7 @@ form > div {
 form label {
     display: block;
 }
+
+#logout {
+    background-color: #6f4e37;
+}
