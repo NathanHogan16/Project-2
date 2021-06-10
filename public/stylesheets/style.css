@@ -153,4 +153,14 @@ form label {
 
 #logout {
     background-color: #6f4e37;
+    margin-top: 5px;
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
 }
