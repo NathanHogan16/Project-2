@@ -22,8 +22,8 @@ const PORT = process.env.PORT || 3001;
 //   })
 // };
 
- const helpers = require('./utils/helpers');
- const hbs = exphbs.create({ helpers });
+//  const helpers = require('./utils/helpers');
+//  const hbs = exphbs.create({ helpers });
 
 app.use(express.json());
 // Parsing
@@ -34,7 +34,7 @@ app.use(express.static("public"));
 
 
 //Handlebars
-app.engine('handlebars', hbs.engine);
+//app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 
