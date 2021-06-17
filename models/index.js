@@ -1,4 +1,7 @@
-const User = require('./User');
+const User = require('./user');
+
+
+module.exports = { User };
 
 // create associations
 // User.hasMany(Post, {
@@ -62,5 +65,3 @@ const User = require('./User');
 //     foreignKey: 'post_id'
 //   });
 
-
-module.exports = { User };
