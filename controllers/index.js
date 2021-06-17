@@ -6,9 +6,9 @@ const homeRoutes = require('./home-routes');
 //const userRoutes = require('./user-routes.js');
 
 //router.use('/users', userRoutes);
-
-router.use('/api', apiRoutes);
-router.use('/', homeRoutes)
+router.get("/",(req, res) => res.send("hello"))
+// router.use('/api', apiRoutes);
+// router.use('/', homeRoutes)
 
 router.use((req, res) => {
     res.status(404).end();
