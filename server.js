@@ -22,8 +22,8 @@ const PORT = process.env.PORT || 3001;
 //   })
 // };
 
-//  const helpers = require('./utils/helpers');
-//  const hbs = exphbs.create({ helpers });
+ const helpers = require('./utils/helpers');
+ const hbs = exphbs.create({ helpers });
 
 app.use(express.json());
 // Parsing
@@ -34,17 +34,17 @@ app.use(express.static("public"));
 
 
 //Handlebars
-//app.engine('handlebars', hbs.engine);
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 
 
-app.engine('handlebars', exphbs({
-  layoutsDir: __dirname + '/views/layouts',
-}));
+// app.engine('handlebars', exphbs({
+//   layoutsDir: __dirname + '/views/layouts',
+// }));
 
 
-app.use(require('./controllers/'));
+//app.use(require('./controllers/'));
 
  //app.use(routes);
 
