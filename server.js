@@ -1,9 +1,9 @@
 const express = require('express');
 
-// const exphbs = require('express-handlebars')
+ const exphbs = require('express-handlebars')
 
 // const sequelize = require('./config/connection');
-// const routes = require('./controllers');
+ const routes = require('./controllers');
 // const path = require('path');
 // const  session = require('express-session');
 
@@ -22,8 +22,8 @@ const PORT = process.env.PORT || 3001;
 //   })
 // };
 
-// const helpers = require('./utils/helpers');
-// const hbs = exphbs.create({ helpers });
+ const helpers = require('./utils/helpers');
+ const hbs = exphbs.create({ helpers });
 
 app.use(express.json());
 // Parsing
@@ -33,20 +33,20 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
 
-// Handlebars
-// app.engine('handlebars', hbs.engine);
-// app.set('view engine', 'handlebars');
+//Handlebars
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 
 
-// app.engine('handlebars', exphbs({
-//     layoutsDir: __dirname + '/views/layouts',
-//     }));
+app.engine('handlebars', exphbs({
+  layoutsDir: __dirname + '/views/layouts',
+}));
 
 
-//app.use(require('./controllers/'));
+app.use(require('./controllers/'));
 
- //app.use(routes);
+ app.use(routes);
 
  app.get("/",(req, res) => res.send("hello"))
 
