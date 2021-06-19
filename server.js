@@ -30,7 +30,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(session(sess));
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 //Handlebars
@@ -42,6 +43,7 @@ app.set('view engine', 'handlebars');
 app.engine('handlebars', exphbs({
   layoutsDir: __dirname + '/views/layouts',
 }));
+
 
 
 //app.use(require('./controllers/'));
