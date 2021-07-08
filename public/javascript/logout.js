@@ -1,4 +1,5 @@
 async function logout() {
+  // same error path in login users does not exist and path is wrong 
     const response = await fetch('/api/users/logout', {
        method: 'post',
       headers: { 'Content-Type': 'application/json' }

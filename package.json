@@ -13,13 +13,16 @@
   },
   "repository": {
     "type": "git",
+    // change this too because we have a different repo now
     "url": "git+https://github.com/linegrind675/Slim-Pickins.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
+    // change this to the correct site
     "url": "https://github.com/linegrind675/Slim-Pickins/issues"
   },
+  // we will have to change repo since he is no longer with us 
   "homepage": "https://github.com/linegrind675/Slim-Pickins#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
