@@ -124,7 +124,7 @@ router.put('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// i dont think this is working either
 // DELETE /api/users/1
 router.delete('/:id', (req, res) => {
     User.destroy({
