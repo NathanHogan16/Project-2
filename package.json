@@ -17,9 +17,7 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-
-  },
+  "bugs": {},
   "homepage": "https://github.com/NathanHogan16/Project-2#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",

@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { receiveMessageOnPort } = require('worker_threads');
  const sequelize = require ('../config/connection');
  const { User } = require('../models');
  const withAuth = require('../utils/auth');
@@ -46,7 +47,7 @@ router.get('/', (req, res) => {
 //     .then(dbPostData => {
 //       // serialize data before passing to template
 //       const posts = dbPostData.map(post => post.get({ plain: true }));
-       res.render('homepage', { loggedIn: true });
+       res.render('homepage', { loggedIn: req.session.loggedIn });
 //     })
 //     .catch(err => {
 //       console.log(err);
