@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f4712b6fa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Slim-Pickins</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f4712b6fa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="main">
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a class="title" href="/">Slim Pickins <i class="fas fa-utensils"></i></a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+            <!-- {{! dropdown menu with categories}} -->
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" style="position: right;">
+                CATEGORIES
+              </button>
+              <div class="dropdown-menu" >
+                <ul>
+                  <li><a href="https://www.aspicyperspective.com/best-hamburger-patty-recipe/">Burgers</a></li>
+                  <li><a href="https://www.allrecipes.com/recipes/251/main-dish/sandwiches/">Sandwiches</a></li>
+                  <li><a href="https://www.bonappetit.com/gallery/breakfast-recipes">Breakfast</a></li>
+                  <li><a href="https://www.loveandlemons.com/salad-recipes/">Salad</a></li>
+                  <li><a href="https://themodernproper.com/30-best-soup-recipes">Soups</a></li>
+                  <li><a href="https://www.allrecipes.com/recipes/79/desserts/">Desserts</a></li>
+                  <li><a href="https://www.budgetbytes.com/category/recipes/pasta/">Pasta</a></li>
+                  <li><a href="https://tasty.co/recipe/pizza-dough">Pizza</a></li>
+                </ul>
+              </div>
+            </div>
+            <button id="logout" class="btn-no-style">logout</button>
+          {{else}}
+            <a class="Login" href="/login">LOGIN &nbsp;<i class="fas fa-user" class="icon"></i></a>
+          {{/if}}
+        </nav>
+      </header>
+      <main>
+        {{{ body }}}
+      </main>
+    </div>
+  </div>
+
+
+
+  <footer id="footer">
+          <h4 id="footer-text"> SLIM PICKENS BROUGHT TO YOU BY </h4>
+          <div class="github"> 
+              <ol>
+                  <li> <a  class="link" href="https://github.com/NathanHogan16"> Nate Hogan</a> <i class="fab fa-github-square"></i></li>
+                  <li><a class="link" href="https://github.com/dsanchezjr99"> Miguel David Sanchez Jr. </a><i class="fab fa-github-square"></i></li>
+                  <li><a class="link" href="https://github.com/Mwimbe1105"> Mckerry Wimberly II </a><i class="fab fa-github-square"></i></li>
+                  <li><a class="link" href="https://github.com/linegrind675"> Jonah Callister </a><i class="fab fa-github-square"></i></li>
+                </ol>
+          </div>
+          {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
+          {{/if}}
+  </footer>
+  <script src="./javascript/recipes.js"></script>
+</body>
+</html>  

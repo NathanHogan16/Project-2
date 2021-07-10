@@ -4,6 +4,8 @@ const { receiveMessageOnPort } = require('worker_threads');
  const { User } = require('../models');
  const withAuth = require('../utils/auth');
 
+
+
   
 router.get('/public/login', withAuth, (req, res) => {
     if (req.session.loggedIn) {
@@ -12,6 +14,11 @@ router.get('/public/login', withAuth, (req, res) => {
     }
   
     res.render('login');
+});
+
+router.get('/login', (req, res) => {
+
+  res.render('test');
 });
 
 // render another page

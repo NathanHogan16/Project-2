@@ -1,6 +1,22 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+router.get('/test', (req, res) => {
+  res.send("something in here")
+  // res.status(200)
+})
 
+router.post('/loginUser', (req, res) => {
+  res.json({
+    status: 200,
+    message: "Success",
+    user: {
+        id: 123,
+        username: "Mckerry",
+    }
+})
+
+  // res.status(200)
+})
 // GET /api/users
 router.get('/', (req, res) => {
     // Access our User model and run .findAll() method)
