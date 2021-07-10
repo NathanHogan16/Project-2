@@ -16,9 +16,9 @@ router.get('/public/login', withAuth, (req, res) => {
     res.render('login');
 });
 
-router.get('/login', (req, res) => {
+router.get('/test', (req, res) => {
 
-  res.render('test');
+  res.render('login');
 });
 
 // render another page
