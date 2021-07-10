@@ -4,14 +4,21 @@ const { receiveMessageOnPort } = require('worker_threads');
  const { User } = require('../models');
  const withAuth = require('../utils/auth');
 
+
+
   
-router.get('/login', withAuth, (req, res) => {
+router.get('/public/login', withAuth, (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
       return;
     }
   
     res.render('login');
+});
+
+router.get('/login', (req, res) => {
+
+  res.render('test');
 });
 
 // render another page
